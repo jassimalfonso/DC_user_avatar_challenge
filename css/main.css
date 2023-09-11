@@ -1,27 +1,35 @@
 html {
     font-size: 62.5%;
 }
-* { 
-    box-sizing: border-box;
-}
+
 body {
-    background: #CBE1F1;
+    /* background: #CBE1F1; */
+    background: #DCE5FF;
     font-family: "Nunito";
-    margin: 3em;
-    height: 90vh;
-    display: grid;
-    place-content: center;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-div.main {
-    background: white;
+main {
+    /* background: white; */
+    background: #FFFFFF;
     border-radius: 3.7em;
-    padding: 1.1em 2.5em 1.1em 1.1em;
-    width: 90vw;
+    width: 70%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 1em 1em .8em;
+    box-shadow: .5em .5em 1em;
+    transition: transform .5s ease, box-shadow .5s ease;
+}
+
+main:hover {
+    transform: translateY(-1em);
+    box-shadow: .2em .2em 2em;
+    
 }
 
 div.content {
@@ -34,7 +42,7 @@ div.content img {
     height: 5.2em;
     border-radius: 50%;
     object-fit: cover;
-    margin-right: 1.8em;
+    margin: 1.1em 1.8em 1.1em 1.1em;
 }
 
 .content h1 {
@@ -43,10 +51,8 @@ div.content img {
     font-weight: bold;
 }
 
-div p.status {
-    margin: 0;
-    width: 2rem;
-    height: 2rem;
-    background-color: #5DBC3C;
-    border-radius: 50%;
+main .status {
+    width: 2em;
+    height: 2em;
+    margin: 2.7em 2.5em;
 } 
